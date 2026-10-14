@@ -2,7 +2,7 @@
 
 A full-stack Flutter application demonstrating **mobile UI development, local database management, REST API integration, authentication, form validation, and backend development**.
 
-The project consists of a Flutter client application and a Node.js/Express backend. The Flutter application contains reusable UI components, models, services, views, form validation, state management, and local SQLite persistence. The backend provides authentication endpoints backed by PostgreSQL.
+The project consists of a Flutter client application and a Node.js/Express backend. The Flutter application contains reusable UI components, models, services, views, form validation, state management, and local SQLite persistence. The backend provides authentication endpoints backed by SQLlite.
 
 ---
 
@@ -39,7 +39,7 @@ The backend uses:
 
 * Node.js
 * Express.js
-* PostgreSQL
+* SQLlite
 * JWT
 * bcrypt
 * REST-style API endpoints

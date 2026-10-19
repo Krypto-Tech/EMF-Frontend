@@ -29,11 +29,7 @@
 
       final isActionLoading = ref.watch(employeeActionLoadingProvider);
 
-      final employeeCount = userList.when(
-        loading: () => 0,
-        error: (error, stackTrace) => 0,
-        data: (users) => users.length,
-      );
+      final employeeCount = ref.watch(employeeCountProvider);
 
 
       employee.when(

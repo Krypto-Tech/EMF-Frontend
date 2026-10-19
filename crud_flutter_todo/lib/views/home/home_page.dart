@@ -35,7 +35,7 @@ class _HomePageState extends State<Homepage>{
     return Scaffold(
       appBar: AppBar(
 
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.blue,
         foregroundColor: Colors.white,  
         
         title: const Text("EMPLOYEE MANAGMENT") , centerTitle: true,
@@ -46,7 +46,7 @@ class _HomePageState extends State<Homepage>{
             SliverAppBar(
               expandedHeight: 500,
               pinned: true,
-              backgroundColor: Colors.lightBlueAccent,
+              backgroundColor: Colors.blue,
               foregroundColor: Colors.white,
               
               flexibleSpace: const FlexibleSpaceBar(
@@ -85,79 +85,79 @@ class _HomePageState extends State<Homepage>{
                   ),
               ),
               SizedBox(height: 20,),
-               MyHeatMap(),
+              //  MyHeatMap(),
               SizedBox(height: 7),
 
               
-              Text(
-                'News',
+              // Text(
+              //   'News',
                 
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  ),
+              //   style: TextStyle(
+              //     fontSize: 25,
+              //     fontWeight: FontWeight.bold,
+              //     ),
                  
                 
-              ),
+              // ),
 
-              Container(
-                width: 400,
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 231, 247, 255),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1.0,
-                  ),
-                  borderRadius: BorderRadius.circular(5)),
-
-              
-              child:Center(
-                child:Text(
-                  'Announcement'
-                )
-              )
-              ),
-              SizedBox(height: 5),
-
-              Container(
-                width: 400,
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 231, 247, 255),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1.0,
-                  ),
-                  borderRadius: BorderRadius.circular(5)),
+              // Container(
+              //   width: 400,
+              //   height: 60,
+              //   decoration: BoxDecoration(
+              //     color: Color.fromARGB(255, 231, 247, 255),
+              //     border: Border.all(
+              //       color: Colors.black,
+              //       width: 1.0,
+              //     ),
+              //     borderRadius: BorderRadius.circular(5)),
 
               
-              child:Center(
-                child:Text(
-                  'Announcement'
-                )
-              )
-              ),
+              // child:Center(
+              //   child:Text(
+              //     'Announcement'
+              //   )
+              // )
+              // ),
+              // SizedBox(height: 5),
 
-              SizedBox(height: 7),
-              Container(
-                width: 400,
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 231, 247, 255),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1.0,
-                  ),
-                  borderRadius: BorderRadius.circular(5)),
+              // Container(
+              //   width: 400,
+              //   height: 60,
+              //   decoration: BoxDecoration(
+              //     color: Color.fromARGB(255, 231, 247, 255),
+              //     border: Border.all(
+              //       color: Colors.black,
+              //       width: 1.0,
+              //     ),
+              //     borderRadius: BorderRadius.circular(5)),
 
               
-              child:Center(
-                child:Text(
-                  'Announcement'
-                )
-              )
-              ),
+              // child:Center(
+              //   child:Text(
+              //     'Announcement'
+              //   )
+              // )
+              // ),
+
+              // SizedBox(height: 7),
+              // Container(
+              //   width: 400,
+              //   height: 60,
+              //   decoration: BoxDecoration(
+              //     color: Color.fromARGB(255, 231, 247, 255),
+              //     border: Border.all(
+              //       color: Colors.black,
+              //       width: 1.0,
+              //     ),
+              //     borderRadius: BorderRadius.circular(5)),
+
+              
+              // child:Center(
+              //   child:Text(
+              //     'Announcement'
+              //   )
+              // )
+              // ),
         ]
         ),
         ),
@@ -167,11 +167,11 @@ class _HomePageState extends State<Homepage>{
       
       ),
       
-        floatingActionButton: FloatingActionButton(onPressed: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
-        },
+        // floatingActionButton: FloatingActionButton(onPressed: (){
+        //   Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
+        // },
         
-        child: const Icon(Icons.add)),
+        // child: const Icon(Icons.add)),
         
     );
 

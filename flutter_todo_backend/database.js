@@ -4,7 +4,7 @@ const pool = new Pool({
     host:'localhost',
     database:'flutter_auth',
     password:'',
-    port:5432,
+    port:5433,
 
 
 });

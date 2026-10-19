@@ -7,7 +7,7 @@ final databaseServiceProvider = Provider<DatabaseService>((ref) {
   return DatabaseService.instance;
 });
 
-final employeeProvider = FutureProvider.family<User?, int>((ref,id) async{
+final employeeProvider = FutureProvider.autoDispose.family<User?, int>((ref,id) async{
   final database= ref.read(databaseServiceProvider);
   return database.getUserById(id); 
 });
@@ -117,4 +117,16 @@ final employeeMessageProvider =
 
 final employeeActionLoadingProvider = StateProvider<bool>((ref){
   return false;
+});
+
+final employeeCountProvider = Provider<int>((ref){
+  return ref.watch(
+    usersProvider.select(
+      (asyncUsers) => asyncUsers.when(
+        data: (users) => users.length,
+        loading: () => 0,
+        error: (error, stackTrace) => 0,
+      ),
+    ),
+  );
 });

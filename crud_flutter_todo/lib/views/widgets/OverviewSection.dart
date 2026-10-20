@@ -6,7 +6,7 @@ class OverviewSection extends StatelessWidget{
         @override 
         Widget build(BuildContext context){
             return Container(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(11),
                 decoration: BoxDecoration(
                     color:Colors.white,
                     borderRadius: BorderRadius.circular(25),
@@ -24,12 +24,12 @@ class OverviewSection extends StatelessWidget{
                 ),
  
         child:Column(
-                crossAxisAlignment: CrossAxisAlignment.center ,
+                crossAxisAlignment: CrossAxisAlignment.start ,
                 children:[
                     Text(
                         'OVERVIEW',
                         style:Theme.of(context).textTheme.titleLarge?.copyWith(
-                             fontWeight: FontWeight.w700,
+                             fontWeight: FontWeight.w500,
                                 letterSpacing: -0.5,
                         ),
                     ),

@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 // import 'package:crud_flutter_todo/views/login/login.dart';
 import 'package:crud_flutter_todo/views/widgets/OverviewCard.dart';
 import 'package:crud_flutter_todo/views/widgets/OverviewSection.dart';
+import 'package:crud_flutter_todo/views/widgets/RecentActivity.dart';
 
 
 
@@ -91,6 +92,8 @@ class _HomePageState extends State<Homepage>{
               //  MyHeatMap(),
               SizedBox(height: 7),
               OverviewSection(),
+              const SizedBox(height: 16),
+              const RecentActivity(),
             
 
         ]

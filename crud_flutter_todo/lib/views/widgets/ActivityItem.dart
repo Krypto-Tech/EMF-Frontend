@@ -12,6 +12,7 @@ class ActivityItem extends StatelessWidget{
     super.key,
     required this.icon,
     required this.color,
+    required this.title,
     required this.description,
     required this.time,
 
@@ -21,7 +22,7 @@ class ActivityItem extends StatelessWidget{
     Widget build(BuildContext context){
         return Row(
             children:[
-                CircleAvatar:(
+                CircleAvatar(
                     radius:22,
                     backgroundColor: color.withValues(alpha:0.12),
                     child:Icon(
@@ -36,14 +37,14 @@ class ActivityItem extends StatelessWidget{
                         children:[
                             Text(
                                 title,
-                                style: Theme.of(context).titleSmall?.copyWith(
+                                style: Theme.of(context).textTheme.titleSmall?.copyWith(
                                     fontWeight:FontWeight.w600,
                                 ),
                             ),
                             const SizedBox(height: 4),
                             Text(
-                                title,
-                                style:Theme.of(context).bodySmall?.copyWith(
+                                description,
+                                style:Theme.of(context).textTheme.bodySmall?.copyWith(
                                     color: Colors.blueGrey,
                                 ),
                             ),
@@ -53,13 +54,13 @@ class ActivityItem extends StatelessWidget{
 
                 const SizedBox(width:8),
                 Text(
-                    title,
+                    time,
                     style: Theme.of(context).textTheme.labelSmall?.copyWith(
                         color:Colors.blueGrey,
-                        
+
                     )
                 )
             ]
-        )
+        );
     }
 }

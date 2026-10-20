@@ -6,6 +6,8 @@ import 'package:crud_flutter_todo/views/pages/AttendancePage.dart';
 import 'package:crud_flutter_todo/views/widgets/HeatMap.dart';
 import 'package:flutter/material.dart';
 // import 'package:crud_flutter_todo/views/login/login.dart';
+import 'package:crud_flutter_todo/views/widgets/OverviewCard.dart';
+import 'package:crud_flutter_todo/views/widgets/OverviewSection.dart';
 
 
 
@@ -33,6 +35,7 @@ class _HomePageState extends State<Homepage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      backgroundColor: const Color(0xFFF5F8FC),
       appBar: AppBar(
 
         backgroundColor: Colors.blue,
@@ -44,7 +47,7 @@ class _HomePageState extends State<Homepage>{
       body: CustomScrollView(
         slivers: [
             SliverAppBar(
-              expandedHeight: 500,
+              expandedHeight: 220,
               pinned: true,
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white,
@@ -87,77 +90,9 @@ class _HomePageState extends State<Homepage>{
               SizedBox(height: 20,),
               //  MyHeatMap(),
               SizedBox(height: 7),
+              OverviewSection(),
+            
 
-              
-              // Text(
-              //   'News',
-                
-              //   style: TextStyle(
-              //     fontSize: 25,
-              //     fontWeight: FontWeight.bold,
-              //     ),
-                 
-                
-              // ),
-
-              // Container(
-              //   width: 400,
-              //   height: 60,
-              //   decoration: BoxDecoration(
-              //     color: Color.fromARGB(255, 231, 247, 255),
-              //     border: Border.all(
-              //       color: Colors.black,
-              //       width: 1.0,
-              //     ),
-              //     borderRadius: BorderRadius.circular(5)),
-
-              
-              // child:Center(
-              //   child:Text(
-              //     'Announcement'
-              //   )
-              // )
-              // ),
-              // SizedBox(height: 5),
-
-              // Container(
-              //   width: 400,
-              //   height: 60,
-              //   decoration: BoxDecoration(
-              //     color: Color.fromARGB(255, 231, 247, 255),
-              //     border: Border.all(
-              //       color: Colors.black,
-              //       width: 1.0,
-              //     ),
-              //     borderRadius: BorderRadius.circular(5)),
-
-              
-              // child:Center(
-              //   child:Text(
-              //     'Announcement'
-              //   )
-              // )
-              // ),
-
-              // SizedBox(height: 7),
-              // Container(
-              //   width: 400,
-              //   height: 60,
-              //   decoration: BoxDecoration(
-              //     color: Color.fromARGB(255, 231, 247, 255),
-              //     border: Border.all(
-              //       color: Colors.black,
-              //       width: 1.0,
-              //     ),
-              //     borderRadius: BorderRadius.circular(5)),
-
-              
-              // child:Center(
-              //   child:Text(
-              //     'Announcement'
-              //   )
-              // )
-              // ),
         ]
         ),
         ),

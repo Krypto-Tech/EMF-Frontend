@@ -43,12 +43,13 @@ class _HomePageState extends State<Homepage>{
         foregroundColor: Colors.white,  
         
         title: const Text("EMPLOYEE MANAGMENT") , centerTitle: true,
+        //  toolbarHeight: 10
 
       ),
       body: CustomScrollView(
         slivers: [
             SliverAppBar(
-              expandedHeight: 220,
+              expandedHeight: 250,
               pinned: true,
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white,

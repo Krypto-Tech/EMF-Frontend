@@ -26,7 +26,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 10,vertical: 25),  
+        margin: const EdgeInsets.symmetric(horizontal: 10,vertical: 15),  
         decoration: const BoxDecoration(
           boxShadow: [
             BoxShadow(
@@ -40,7 +40,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
 
 
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(35),
+          borderRadius: BorderRadius.circular(39),
           child: BottomNavigationBar(
             currentIndex: myCurrentIndex,
             backgroundColor: Colors.white,

@@ -1,4 +1,4 @@
-#  Employee Management App — Flutter
+#  Employee Management App 
 
 A full-stack Flutter application demonstrating **mobile UI development, local database management, REST API integration, authentication, form validation, and backend development**.
 

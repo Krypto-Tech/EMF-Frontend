@@ -8,6 +8,10 @@ const jwt = require('jsonwebtoken');
 const JWT_SECRET = 'my-secret-key';
 app.use(express.json());
 
+const EmployeeRoutes = require('./src/routes/EmployeeRoutes');
+
+app.use('/api', EmployeeRoutes);
+
 app.post('/register', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -124,26 +128,26 @@ app.get('/profile', async (req, res) => {
   }
 });
 
-app.get('/api/employees',async(req,res)=>{
-  try{
-    const result = await pool.query(
-      'SELECT * FROM employees ORDER BY id ASC'
-    );
+// app.get('/api/employees',async(req,res)=>{
+//   try{
+//     const result = await pool.query(
+//       'SELECT * FROM employees ORDER BY id ASC'
+//     );
 
-    res.json({
-      success:true,
-      employees:result.rows
-    })
+//     res.json({
+//       success:true,
+//       employees:result.rows
+//     })
 
-  }catch(err){
-    console.error('Error fetching employees',err.message);
+//   }catch(err){
+//     console.error('Error fetching employees',err.message);
 
-    res.status(500).json({
-      success:false,
-      message:'Failed to fetch employees'
-    })
-  }
-})
+//     res.status(500).json({
+//       success:false,
+//       message:'Failed to fetch employees'
+//     })
+//   }
+// })
 
 app.post('/api/employees',async(req,res)=>{
   try{
